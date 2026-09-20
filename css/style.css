@@ -2300,3 +2300,543 @@ footer {
 .experience-media-item:hover {
   border-color: #3157D5 !important;
 }
+
+/* =========================================================
+   MOBILE RESPONSIVE — FINAL POLISH
+   Paste at VERY BOTTOM of style.css
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* =========================
+     GLOBAL
+  ========================= */
+
+  .container {
+    width: min(100% - 32px, var(--max));
+    margin-inline: auto;
+  }
+
+  section {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+  }
+
+
+  /* =========================
+     NAVBAR
+  ========================= */
+
+  .site-header {
+    padding: 14px 0 !important;
+  }
+
+  .logo {
+    font-size: 17px !important;
+  }
+
+  .nav-links {
+    top: calc(100% + 10px) !important;
+    right: 16px !important;
+    left: 16px !important;
+
+    width: auto !important;
+
+    padding: 10px !important;
+
+    border-radius: 14px !important;
+  }
+
+  .nav-links a {
+    display: block !important;
+
+    padding: 12px 14px !important;
+
+    border-radius: 9px;
+  }
+
+  .nav-links a:hover {
+    background: #E8EDFF !important;
+  }
+
+
+  /* =========================
+     HERO
+  ========================= */
+
+  .hero {
+    min-height: auto !important;
+
+    padding-top: 100px !important;
+    padding-bottom: 70px !important;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+
+    gap: 45px !important;
+
+    text-align: center;
+  }
+
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-copy .eyebrow {
+    font-size: 11px !important;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(52px, 16vw, 76px) !important;
+
+    line-height: .92 !important;
+
+    margin: 10px 0 18px !important;
+  }
+
+  .hero-copy h2 {
+    font-size: 19px !important;
+
+    line-height: 1.4 !important;
+  }
+
+  .hero-copy .hero-text {
+    max-width: 480px;
+
+    font-size: 14px !important;
+
+    line-height: 1.75 !important;
+  }
+
+
+  /* =========================
+     HERO PILLS
+  ========================= */
+
+  .hero-copy .pills {
+    justify-content: center !important;
+
+    gap: 7px !important;
+
+    max-width: 360px;
+  }
+
+  .hero-copy .pills span {
+    font-size: 11px !important;
+
+    padding: 7px 10px !important;
+  }
+
+
+  /* =========================
+     HERO BUTTONS
+  ========================= */
+
+  .hero-actions {
+    width: 100%;
+
+    justify-content: center !important;
+
+    flex-wrap: wrap;
+
+    gap: 10px !important;
+  }
+
+  .hero-actions .btn {
+    min-height: 44px;
+
+    padding: 11px 17px !important;
+
+    font-size: 13px !important;
+  }
+
+
+  /* =========================
+     HERO PHOTO
+  ========================= */
+
+  .hero-visual {
+    width: 100%;
+
+    max-width: 330px;
+
+    margin-inline: auto;
+  }
+
+  .portrait-frame {
+    width: min(70vw, 280px) !important;
+    height: min(70vw, 280px) !important;
+
+    margin-inline: auto;
+  }
+
+  .signature {
+    text-align: center;
+
+    margin-top: 14px !important;
+  }
+
+
+  /* =========================
+     SECTION HEAD
+  ========================= */
+
+  .section-head {
+    display: block !important;
+  }
+
+  .section-head h2 {
+    font-size: 34px !important;
+
+    line-height: 1.1 !important;
+
+    margin-top: 8px !important;
+  }
+
+  .section-desc {
+    max-width: 100% !important;
+
+    margin-top: 14px !important;
+
+    font-size: 14px !important;
+
+    line-height: 1.7 !important;
+  }
+
+
+  /* =========================
+     EXPERIENCE
+  ========================= */
+
+  .timeline {
+    margin-top: 30px !important;
+
+    padding-left: 20px !important;
+  }
+
+  .timeline-item {
+    padding-left: 22px !important;
+
+    padding-bottom: 35px !important;
+  }
+
+  .timeline-item h3 {
+    font-size: 19px !important;
+
+    line-height: 1.35 !important;
+  }
+
+  .timeline-item h4 {
+    font-size: 13px !important;
+
+    line-height: 1.5 !important;
+  }
+
+  .timeline-item p {
+    font-size: 13.5px !important;
+
+    line-height: 1.75 !important;
+  }
+
+  .date {
+    font-size: 11px !important;
+  }
+
+  .timeline-item:before,
+  .timeline-item.featured:before {
+    width: 10px !important;
+    height: 10px !important;
+
+    left: -5px !important;
+
+    border-width: 2px !important;
+  }
+
+
+  /* =========================
+     EXPERIENCE MEDIA
+  ========================= */
+
+  .experience-media {
+    gap: 8px !important;
+
+    margin-top: 15px !important;
+  }
+
+  .experience-media-item {
+    flex: 0 0 90px !important;
+
+    width: 90px !important;
+    height: 70px !important;
+  }
+
+  .experience-media-item.certificate {
+    height: 105px !important;
+  }
+
+
+  /* =========================
+     PROJECT FILTERS
+  ========================= */
+
+  .project-filters {
+    display: flex !important;
+
+    flex-wrap: nowrap !important;
+
+    overflow-x: auto !important;
+
+    justify-content: flex-start !important;
+
+    padding-bottom: 5px;
+
+    scrollbar-width: none;
+  }
+
+  .project-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .project-filter {
+    flex: 0 0 auto !important;
+
+    font-size: 11px !important;
+
+    padding: 8px 12px !important;
+  }
+
+
+  /* =========================
+     PROJECT CARDS
+  ========================= */
+
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+
+    gap: 18px !important;
+  }
+
+  .project-card {
+    border-radius: 16px !important;
+  }
+
+  .project-art {
+    min-height: 190px !important;
+
+    padding: 22px !important;
+  }
+
+  .project-art strong {
+    font-size: 22px !important;
+
+    line-height: 1.1 !important;
+  }
+
+  .project-body {
+    padding: 20px !important;
+  }
+
+  .project-body h3 {
+    font-size: 20px !important;
+
+    line-height: 1.35 !important;
+  }
+
+  .project-body p {
+    font-size: 13.5px !important;
+
+    line-height: 1.75 !important;
+  }
+
+  .project-links {
+    flex-wrap: wrap !important;
+
+    gap: 7px !important;
+  }
+
+  .project-links a,
+  .project-link {
+    font-size: 12px !important;
+
+    padding: 8px 11px !important;
+  }
+
+
+  /* =========================
+     AWARDS
+  ========================= */
+
+  .awards-list {
+    gap: 18px !important;
+  }
+
+  .award-card {
+    grid-template-columns: 1fr !important;
+
+    gap: 18px !important;
+
+    padding: 16px !important;
+
+    border-radius: 16px !important;
+  }
+
+  .award-gallery {
+    height: 220px !important;
+
+    border-radius: 12px !important;
+  }
+
+  .award-content {
+    gap: 9px !important;
+  }
+
+  .award-content h3 {
+    font-size: 20px !important;
+
+    line-height: 1.35 !important;
+  }
+
+  .award-content p:not(.award-meta) {
+    font-size: 13.5px !important;
+
+    line-height: 1.75 !important;
+  }
+
+  .award-tag {
+    font-size: 10px !important;
+
+    padding: 5px 9px !important;
+  }
+
+
+  /* =========================
+     CERTIFICATION
+  ========================= */
+
+  .certification-grid {
+    grid-template-columns: 1fr !important;
+
+    gap: 18px !important;
+  }
+
+  .certification-card {
+    border-radius: 16px !important;
+  }
+
+  .certificate-slide {
+    min-height: 250px !important;
+
+    max-height: 350px !important;
+  }
+
+  .certification-card h3 {
+    font-size: 20px !important;
+
+    line-height: 1.35 !important;
+  }
+
+  .certification-card p {
+    font-size: 13.5px !important;
+
+    line-height: 1.75 !important;
+  }
+
+
+  /* =========================
+     CONTACT
+  ========================= */
+
+  .contact-links a {
+    padding: 16px 0 !important;
+  }
+
+  .contact-links span {
+    font-size: 14px !important;
+  }
+
+  .contact-links small {
+    font-size: 11px !important;
+  }
+
+
+  /* =========================
+     FOOTER
+  ========================= */
+
+  footer {
+    padding: 30px 16px !important;
+
+    text-align: center;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  .hero {
+    padding-top: 90px !important;
+  }
+
+  .hero-copy h1 {
+    font-size: 56px !important;
+  }
+
+  .hero-copy h2 {
+    font-size: 17px !important;
+  }
+
+  .hero-copy .hero-text {
+    font-size: 13px !important;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .portrait-frame {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .section-head h2 {
+    font-size: 30px !important;
+  }
+
+  .project-art {
+    min-height: 165px !important;
+  }
+
+  .award-gallery {
+    height: 200px !important;
+  }
+
+  .certificate-slide {
+    min-height: 220px !important;
+  }
+
+}
