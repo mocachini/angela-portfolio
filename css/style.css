@@ -2840,3 +2840,18 @@ footer {
   }
 
 }
+
+/* =========================================================
+   MOBILE — FIX INVISIBLE CONTENT
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* Make all reveal sections visible on mobile */
+  .reveal,
+  .reveal.visible {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+}
